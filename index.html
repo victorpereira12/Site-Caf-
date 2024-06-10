@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<script src="main.js" defer></script>   
+		<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="website icon" type="png"
@@ -19,26 +20,42 @@
        </a>
 
        <nav class="navbar">
-        	<a href="#">Home</a>
-        	<a href="#about">Sobre</a>
-        	<a href="#menu">Menu</a>
-          <a href="#review">avaliações</a>
-        	<a href="#address">Endereço</a>
+         <div class="content">
+		   <a href="#">Home</a>
+     	   <a href="#about">Sobre</a>
+    	   <a href="#menu">Menu</a>
+           <a href="#review">avaliações</a>
+           <a href="#address">Endereço</a>
+	     </div>
        </nav>
+			
        <div class="icons">
          <img src="./assets/icons8-pesquisar-50.png" alt="seach">
          <img src="./assets/icons8-carrinho-de-compras-30.png" alt="carrinho de compra">
-				 <img class="menuIcon" src="./assets/icons8-cardápio-50.png" alt="menu">
+		 <button onclick="menuShow()" class="menuIcon">
+		 <img  class="menu-icone" src="./assets/icons8-cardápio-50.png" alt="menu">
+		 </button>
        </div>
-      </section>     
+			
+			</section>     
+			<nav class="navbar-mobile">
+				<div class="content-mobile">
+					<a href="#">Home</a>
+					<a href="#about">Sobre</a>
+					<a href="#menu">Menu</a>
+					<a href="#review">avaliações</a>
+					<a href="#address">Endereço</a>
+				</div>
+				<div class="fundo"></div>
+			</nav>
     </header>
-
+   
     <div class="home-container">
           <section id="#home">
              <div class="content">
                 <h3>O MELHOR CAFÉ DA REGIÃO DE CAMPINAS</h3>
                 <P> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nam velit numquam aspernatur vero illo voluptatibus suscipit possimus totam soluta. Aut omnis iure doloremque voluptate minima ad doloribus labore quia.</P>
-                <a href="#" class="botton">Pegue o seu agora</a>
+                <a href="#menu" class="botton">Pegue o seu agora</a>
              </div>
           </section>
     </div>
@@ -52,7 +69,7 @@
                 <div class="content">
                       <h3>O que faz nosso café especial</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur modi fugiat saepe, blanditiis minus laboriosam maxime enim minima quia praesentium vitae autem ea, cum amet aut in temporibus. Blanditiis!</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, debitis voluptatum. Consectetur maiores, eligendi doloremque sit corporis reiciendis nulla ab quas dicta quos culpa neque sint facilis similique. Deleniti, qui?</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       <a href="#" class="botton">saiba mais</a>
                 </div>
 
@@ -78,7 +95,8 @@
             </div>
             <div class="box">
                 <img src="./assets/menu-3.png" alt="item 2">
-                <h3>Café coado</h3>
+                */96
+								w<h3>Café coado</h3>
                 <div class="price">R$23,99 <span>R$25,99</span></div>
                 <a href="#" class="btn">Adicione ao Carrinho</a>
             </div>
@@ -167,6 +185,6 @@
            <a href="https://github.com/victorpereira12" target="_blank"> <img width="30" height="30" src="./assets/icons8-github-50.png" alt="github"> </a> 
         </div>
     </section>
-
+	
 </body>
 </html>
